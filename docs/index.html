@@ -14,11 +14,20 @@
     body {
       font-family: 'Quattrocento Sans', sans-serif;
       font-size: 18px;
+      background-position: top;
+      background-image: linear-gradient(rgb(133 71 48 / 97%), rgb(133 71 48 / 97%)), url(departed-header.jpg);
+      background-size: cover;
+      color: white;
+      text-shadow: 2px 2px 1px #000000cf;
     }
 
     h1 {
-      font-size:26px;
+      font-size: 26px;
       font-family: 'Cinzel', serif;
+    }
+
+    .resp {
+      max-width: 100%;
     }
 
     .flex-row {
@@ -34,7 +43,12 @@
       flex-direction: column;
     }
 
-    .text {
+    .full {
+      width: 100%;
+      display: flex;
+    }
+
+    .wideness {
       max-width: 500px;
     }
   </style>
@@ -42,8 +56,9 @@
 </head>
 
 <body>
-  <div class="flex-row">
-    <div class="flex-col">
+  <div class="flex-row full">
+    <div class="flex-col wideness">
+      <!-- <div><img class="resp" src="departed-header.jpg"/></div> -->
       <div><button id="go">Generate</button></div>
       <div id="text" class="text">
 
@@ -92,7 +107,7 @@
         stick(currentDiv, getP(4));
         stick(currentDiv, getP(1));
         stick(currentDiv, getP(6));
-      
+
       };
 
       const go = document.getElementById("go");
