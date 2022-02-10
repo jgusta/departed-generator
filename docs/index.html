@@ -80,14 +80,19 @@
       const gen = () => {
         const currentDiv = document.getElementById("text");
         currentDiv.innerHTML = "";
+        let titleText = '';
+        while (titleText.length < 20) {
+          titleText = getLorem(1);
+        }
         let title = document.createElement("h1");
-        stick(title, document.createTextNode(titleCase(getLorem(1))));
+        stick(title, document.createTextNode(titleCase(titleText)));
         stick(currentDiv, title);
         stick(currentDiv, getP(3));
         stick(currentDiv, getP(6));
         stick(currentDiv, getP(4));
         stick(currentDiv, getP(1));
         stick(currentDiv, getP(6));
+      
       };
 
       const go = document.getElementById("go");
