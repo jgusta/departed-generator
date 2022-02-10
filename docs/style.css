@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "Aachen Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Aachen Bold"), url("aachen-bold.woff") format("woff");
+}
+body {
+  background-position: top;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url(the-departed-2006.jpg);
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+    position: relative;
+    
+}
+main {
+  padding-bottom:160px;
+}
+.typography-base {
+  color: white;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 18px;
+}
+.text-shadow {
+  text-shadow: 2px 2px 1px #000000cf;
+}
+
+h1 {
+  font-size: 4em;
+  font-family: "Aachen Bold";
+  font-weight: normal;
+  color: white;
+  line-height: 1em;
+  margin:0.3em 0 0 0;
+}
+
+h2 {
+  font-family: "Cinzel", serif;
+  font-size: 26px;
+}
+.content-width {
+  display: flex;  
+  flex-direction: row;
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: center;
+}
+header {
+  margin:0;
+}
+.header-the {
+  display: block;
+  position: relative;
+  text-transform: uppercase;
+  left: 1.5rem;
+}
+.header-departed {
+  text-transform: uppercase;
+  position: relative;
+  display: block;
+}
+.header-sub {
+  display: block;
+  font-size: 26px;
+    text-align:right;
+  right: 10px;
+  position: relative;
+}
+
+.resp {
+  max-width: 100%;
+}
+
+/* .flex-row {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+} */
+
+.col {
+  max-width:500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+footer {
+  position:absolute;
+  margin:0;
+  left:0;
+  bottom:0;
+  right:0;
+  height:130px;
+}
+
+.gh-logo {
+  position:absolute;
+  right: 10px;
+  bottom:10px;
+  height:auto;
+  width:35px;
+}
