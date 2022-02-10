@@ -4,13 +4,17 @@
   font-weight: normal;
   src: local("Aachen Bold"), url("aachen-bold.woff") format("woff");
 }
+html {
+  font-size:16px;
+}
 body {
+
   background-position: top;
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url(the-departed-2006.jpg);
   background-size: cover;
   margin: 0;
-  padding: 0;
+  padding: 20px;
     position: relative;
     
 }
@@ -20,7 +24,11 @@ main {
 .typography-base {
   color: white;
   font-family: "Quattrocento Sans", sans-serif;
-  font-size: 18px;
+
+}
+.typography-base>p {
+  line-height: 1rem;
+  font-size: 1.6rem;
 }
 .text-shadow {
   text-shadow: 2px 2px 1px #000000cf;
@@ -33,6 +41,11 @@ h1 {
   color: white;
   line-height: 1em;
   margin:0.3em 0 0 0;
+}
+@media screen and (max-width: 550px){
+  h1 {
+  font-size: 2.7em;
+  }
 }
 
 h2 {
@@ -63,7 +76,7 @@ header {
 }
 .header-sub {
   display: block;
-  font-size: 26px;
+  font-size: 1.6rem;
     text-align:right;
   right: 10px;
   position: relative;
