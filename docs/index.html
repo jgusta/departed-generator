@@ -63,7 +63,12 @@
     <div class="gh-logo"><a href="https://github.com/jgusta/departed-generator"><img src="github.svg"
           alt="GitHub icon"></a>
   </footer>
-  <script src="app.js"></script>
+  <script type="module">
+    import {DepartedGen} from './departedgen.js'
+    import {clean} from './clean.js'
+    DepartedGen(clean);
+
+  </script>
 </body>
 
 </html>
